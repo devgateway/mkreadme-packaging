@@ -1,0 +1,21 @@
+Source: mkreadme
+Maintainer: Styopa Semenukha <ssemenukha@developmentgateway.org>
+Section: python
+Priority: optional
+Build-Depends:
+ debhelper (>= 11),
+ dh-python,
+ python3-all,
+ python3-setuptools
+Suggests:
+ markdown
+Standards-Version: 4.1.3
+Homepage: https://github.com/devgateway/mkreadme
+X-Python3-Version: >= 3.4
+
+Package: mkreadme
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Description: Generate Readme boilerplate from Ansible roles
+  This utility reads default variables from a role and optionally a minimal
+  example playbook, and produces a template for README.md file.
