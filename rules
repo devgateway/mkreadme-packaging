@@ -6,4 +6,4 @@ clean:
 	dh $@ --with python3 --buildsystem=pybuild
 
 build:
-	dh $@ --with python3,bash-completion --buildsystem=pybuild
+	dh $@ --with python3 --buildsystem=pybuild
