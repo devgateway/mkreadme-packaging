@@ -4,6 +4,8 @@
 
 clean:
 	dh $@ --with python3 --buildsystem=pybuild
+	rm -f README.html
 
 build:
 	dh $@ --with python3 --buildsystem=pybuild
+	markdown README.md > README.html
